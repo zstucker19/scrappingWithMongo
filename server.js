@@ -43,7 +43,7 @@ app.get("/scrape", function(req, res) {
     
     var $ = cheerio.load(html);
   
-    $("trb_outfit_relatedListTitle_a").each(function(i, element) {
+    $("story-heading").each(function(i, element) {
 
      
       var result = {};
